@@ -1,12 +1,12 @@
 package piece;
 
 public class Bishop extends Piece {
-    public Bishop(int x, int y, int color) {
-        super(x, y, color);
+    public Bishop(int color, int col, int row) {
+        super(color, col, row);
         if (color == 0) {
-            image = getImage("/res/piece/bishop-w");
+            image = getImage("/piece/white-bishop.png");
         } else {
-            image = getImage("/res/piece/bishop-b");
+            image = getImage("/piece/black-bishop.png");
         }
     }
 }

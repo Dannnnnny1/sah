@@ -1,12 +1,14 @@
 package piece;
 
+import main.GamePanel;
+
 public class Knight extends Piece {
-    public Knight(int x, int y, int color) {
-        super(x, y, color);
-        if (color == 0) {
-            image = getImage("/res/piece/knight-w");
+    public Knight(int color, int col, int row) {
+        super(color, col, row);
+        if (color == GamePanel.WHITE) {
+            image = getImage("/piece/white-knight.png");
         } else {
-            image = getImage("/res/piece/knight-b");
+            image = getImage("/piece/black-knight.png");
         }
     }
 }
